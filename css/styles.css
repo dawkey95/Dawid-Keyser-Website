@@ -78,6 +78,7 @@ hr {
     right: 0;
     width: 77px;
     height: 77px;
+    background: #F3F2F1;
     border-radius: 50px;
     overflow: hidden;
     animation-name: design-bubble-vert;
@@ -94,6 +95,7 @@ hr {
     width: 77px;
     height: 77px;
     border-radius: 50px;
+    background: #F3F2F1;
     overflow: hidden;
     animation-name: design-bubble-vert;
     animation-duration: 20s;
