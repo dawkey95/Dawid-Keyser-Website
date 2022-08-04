@@ -3,11 +3,34 @@
 * Created by Dawid Keyser
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap');
 
-/* Body and Div */ 
+/* ---------------------------------------------- BODY and DIV --------------------------------------------------------------- */
+
 body {
     margin: 0;
     text-align: center;
+    font-family: 'Merriweather', serif;
+}
+
+header {
+    padding: 2em 0;
+}
+
+
+
+.land-holder {
+    width: 800px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.profile-picture-fig {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    padding: 20px 0;
 }
 
 .top-container {
@@ -16,40 +39,218 @@ body {
     background-color: #E4F9F5;
 }
 
-.middle-container {
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
-.bottom-container {
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.design-container {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.design {
+    position: absolute;
+    top: 2.6em;
+    right: 0;
+    width: 77px;
+    height: 77px;
+    border-radius: 50px;
+    overflow: hidden;
+    animation-name: design-bubble-vert;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(1,0,0,1);
+    background-image: url(/Pictures/images/design-icons-vert.png);
+}
+
+.dev {
+    position: absolute;
+    top: 2.6em;
+    left: 2%;
+    width: 77px;
+    height: 77px;
+    border-radius: 50px;
+    overflow: hidden;
+    animation-name: design-bubble-vert;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(1,0,0,1);
+    background-image: url(/Pictures/images/dev-icons-vert.png);
+}
+
+.design-info-offset, .dev-info-offset{
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.home-design-info {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    align-items: center;
+    background-image: url(/Pictures/images/line-bg.png);
+    background-position: center center;
+    background-repeat: repeat-x;
+}
+
+.home-dev-info {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    align-items: center;
+}
+
+.home-design-info figure {
+    max-width: 150px;
+    margin: 0;
+}
+
+.dev-figure {
+    max-width: 150px;
+    margin: 0;
+    position: relative;
+    left: 85%;
 }
 
 
 
+#hello {
+    padding: 6em 0 0;
+    margin: 0 0 6em;
+}
+
+#hello article {
+    margin: 0 auto;
+    max-width: 460px;
+}
+
+#hello article figure {
+    margin: 0 auto;
+    max-width: 150px;
+}
+
+#what-i-do {
+    z-index: 980;
+    position: relative;
+    background: #fff;
+    padding: 0;
+}
+
+#design, #dev {
+    margin: 1em 0;
+    text-align: center;
+}
+
+#design-info, #dev-info{
+    margin: 0 auto;
+    width: 80%;
+}
 
 
-/* Text */
+/* ---------------------------------------------------- TEXT ----------------------------------------------------------------- */
+
 h1 {
     margin-top: 0;
+    font-family: 'Sacramento', cursive;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+    color: #45b29a;
+}
+
+p {
+    font-size: 1.5em;
+    padding: 1em;
+}
+
+article header h2 {
+    color: #1e836c;
+    text-align: center;
+    font-size: 3.8em;
+    font-weight: 400;
 }
 
 
 
+#hello article h3 {
+    text-align: center;
+    padding: 0.5em 0;
+}
 
+#hello article p {
+    text-align: center;
+}
 
-/* Images */
+#copyright {
+    font-size: 0.8em;
+}
+
+/* ---------------------------------------------------- IMAGES --------------------------------------------------------------- */
+
 #mountain {
-    width: 1000px;
+    width: 100%;
 }
 
 #left-cloud {
     position: absolute;
-    width: 150px;
-    left: 20px;
-    bottom: 40%;
+    left: 5%;
+    bottom: 60%;
 }
 
 #right-cloud {
     position: absolute;
-    width: 150px;
-    top: 110px;
-    right: 80px;
+    top: 15%;
+    right: 8%;
+}
+
+#profile-picture {
+    width: 100%;
+}
+
+
+/* ---------------------------------------------------- @KEYFRAMES --------------------------------------------------------------- */
+
+@keyframes design-bubble-vert {
+    0% {
+        background-position: 0 0;
+    }
+    
+    5% {
+        background-position: 0 77px;
+    }
+    35% {
+        background-position: 0 77px;
+    }
+    40% {
+        background-position: 0 154px;
+    }
+    68% {
+        background-position: 0 154px;
+    }
+    73% {
+        background-position: 0 231px;
+    }
+    100% {
+        background-position: 0 231px;
+    }
 }
