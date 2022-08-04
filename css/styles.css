@@ -84,7 +84,7 @@ hr {
     animation-duration: 20s;
     animation-iteration-count: infinite;
     animation-timing-function: cubic-bezier(1,0,0,1);
-    background-image: url(./Pictures/images/design-icons-vert.png);
+    background-image: url(../Pictures/images/design-icons-vert.png);
 }
 
 .dev {
@@ -100,7 +100,7 @@ hr {
     animation-delay: 1.5s;
     animation-iteration-count: infinite;
     animation-timing-function: cubic-bezier(1,0,0,1);
-    background-image: url(./Pictures/images/dev-icons-vert.png);
+    background-image: url(../Pictures/images/dev-icons-vert.png);
 }
 
 .design-info-offset, .dev-info-offset{
@@ -115,7 +115,7 @@ hr {
     margin: 0 auto;
     position: relative;
     align-items: center;
-    background-image: url(./Pictures/images/line-bg.png);
+    background-image: url(../Pictures/images/line-bg.png);
     background-position: center center;
     background-repeat: repeat-x;
 }
