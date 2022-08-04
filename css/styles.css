@@ -11,10 +11,18 @@ body {
     margin: 0;
     text-align: center;
     font-family: 'Merriweather', serif;
+    color: #40514E;
 }
 
 header {
     padding: 2em 0;
+}
+
+hr {
+    border: dotted #F0EFEF;
+    border-bottom: none;
+    width: 2rem;
+    margin: 2rem auto;
 }
 
 
@@ -37,6 +45,12 @@ header {
     padding-top: 100px;
     position: relative;
     background-color: #E4F9F5;
+}
+
+.bottom-container {
+    background-color: #30E3CA;
+    margin-top: 2.5em;
+    padding: 1.5rem 0 0.8rem;
 }
 
 .container {
@@ -83,6 +97,7 @@ header {
     overflow: hidden;
     animation-name: design-bubble-vert;
     animation-duration: 20s;
+    animation-delay: 1.5s;
     animation-iteration-count: infinite;
     animation-timing-function: cubic-bezier(1,0,0,1);
     background-image: url(/Pictures/images/dev-icons-vert.png);
@@ -127,8 +142,8 @@ header {
 
 
 #hello {
-    padding: 6em 0 0;
-    margin: 0 0 6em;
+    padding: 3em 0 0;
+    margin: 0 0 3em;
 }
 
 #hello article {
@@ -162,35 +177,65 @@ header {
 /* ---------------------------------------------------- TEXT ----------------------------------------------------------------- */
 
 h1 {
+    margin: 50px auto 0 auto;
+    font-size: 5rem;
+    line-height: 2;
+    color: #1e836c;
     margin-top: 0;
     font-family: 'Sacramento', cursive;
 }
 
 h2 {
+    font-size: 1.5rem;
     font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    color: #45b29a;
     margin-top: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
 }
 
 h3 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 2em;
+    font-size: 2rem;
     color: #45b29a;
 }
 
 p {
-    font-size: 1.5em;
+    margin: 0;
+    font-size: 1.2rem;
     padding: 1em;
+    line-height: 2;
+}
+
+a {
+    font-family: 'Montserrat', sans-serif;
+    color: #45b29a;
+    margin: 0.8rem 1rem;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #EAF6F6;
 }
 
 article header h2 {
     color: #1e836c;
     text-align: center;
-    font-size: 3.8em;
-    font-weight: 400;
+    font-size: 3.8rem;
+    font-weight: normal;
 }
 
 
+.contact-me h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.contact-me h3 {
+    font-size: 1.5rem;
+    padding-top: 1em;
+    margin: 10px auto 50px auto;
+}
 
 #hello article h3 {
     text-align: center;
@@ -202,8 +247,43 @@ article header h2 {
 }
 
 #copyright {
-    font-size: 0.8em;
+    color: #EAF6F6;
+    font-size: 0.75rem;
+    padding: 1rem 0;
 }
+
+
+
+/* ---------------------------------------------------- BUTTON --------------------------------------------------------------- */
+
+.btn {
+    background: #11cdd4;
+    background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+    background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+    -webkit-border-radius: 8;
+    -moz-border-radius: 8;
+    border-radius: 8px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #30e3cb;
+    background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+    text-decoration: none;
+}
+
+
 
 /* ---------------------------------------------------- IMAGES --------------------------------------------------------------- */
 
