@@ -168,9 +168,15 @@ hr {
     text-align: center;
 }
 
-#design-info, #dev-info{
+#design-info {
     margin: 0 auto;
     width: 80%;
+}
+
+#dev-info {
+    margin: 0 auto;
+    width: 80%;
+    margin-top: 3rem;
 }
 
 
